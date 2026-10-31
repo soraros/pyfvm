@@ -1,0 +1,13 @@
+build/
+doc/_build/
+doc/build/
+pyfvm.egg-info/
+dist/
+*.prof
+*.e
+*.msh
+.cache/
+LloydInit.pos
+*.egg-info/
+.pytest_cache/
+.tox/
