@@ -1,0 +1,343 @@
+{
+  "created_at_utc": "2026-10-31T03:25:59.846076+00:00",
+  "public_reference": "soraros/pyfvm@cbf9d2bf2bdcfc2b6cc37ad46ed66b986cd8efac",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "flags": [
+      "-std=c99",
+      "-O2",
+      "-fPIC",
+      "-shared",
+      "-fno-fast-math",
+      "-ffp-contract=off"
+    ]
+  },
+  "tests": {
+    "run": 22,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 2.495362931999807,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "precision": {
+    "component_value": 1.0,
+    "component_derivative": 1.0,
+    "ordinary_ordered_sum": 0.0,
+    "fsum_after_local_subtotal": 0.0,
+    "single_rounding_affine_value": -1.520467360508475e-18,
+    "ordinary_affine_value": 0.0,
+    "centred_port_increment_Pa": 9.094947017729282e-13,
+    "published_port_increment_Pa": 0.0,
+    "centred_feed_kg_s": 7.372364052571356e-24
+  },
+  "independent_errors": {
+    "cell": {
+      "steady_state_relative_max_error": 2.3849196756089286e-16,
+      "steady_jacobian_relative_max_error": 1.1282944937581033e-16,
+      "steady_gap_tangent_relative_max_error": 9.55024647423159e-16,
+      "steady_flow_relative_error": 1.2212453270876722e-15,
+      "be_independent_residual_max_kg_s": 1.9025154088719637e-23,
+      "be_jacobian_relative_max_error": 1.5964210262411642e-16,
+      "be_gap_tangent_relative_max_error": 1.5668654996757425e-15,
+      "be_state_direction_fd_relative_max_error": 2.4594661360706885e-12,
+      "be_direct_gap_fd_relative_max_error": 2.469278089495016e-11,
+      "be_balance_kg_s": 8.706075947120616e-23
+    },
+    "p1": {
+      "steady_state_relative_max_error": 3.5832833331447566e-16,
+      "steady_jacobian_relative_max_error": 7.075309631452575e-16,
+      "steady_gap_tangent_relative_max_error": 1.8665096040736415e-15,
+      "steady_flow_relative_error": 8.881784197001252e-16,
+      "be_independent_residual_max_kg_s": 7.92025436519524e-23,
+      "be_jacobian_relative_max_error": 5.96739429292043e-16,
+      "be_gap_tangent_relative_max_error": 1.09272072743699e-15,
+      "be_state_direction_fd_relative_max_error": 2.0890232930191774e-12,
+      "be_direct_gap_fd_relative_max_error": 2.4359112482936348e-11,
+      "be_balance_kg_s": 1.1311694876662653e-22
+    }
+  },
+  "uniform_continuum_load_N": 14.08793084944347,
+  "continuum_load_quadrature_error_estimate_N": 1.5640745198379063e-13,
+  "convergence": [
+    {
+      "space": "CellFV",
+      "n": 4,
+      "state_dofs": 17,
+      "native_sample_relative_max_error": 0.028253383755849498,
+      "port_relative_error": 0.00834735111815732,
+      "flow_relative_error": 0.015100882281463002,
+      "load_relative_error": 0.036547547671436975,
+      "load_N": 14.602810173755412,
+      "stiffness_N_m": 2925885.4355241386,
+      "mass_balance_kg_s": -1.0587911840678754e-22,
+      "solve_observe_tangent_seconds": 0.007240448000175093
+    },
+    {
+      "space": "CellFV",
+      "n": 8,
+      "state_dofs": 65,
+      "native_sample_relative_max_error": 0.00783054754188349,
+      "port_relative_error": 0.0021250398811294424,
+      "flow_relative_error": 0.003844330570754062,
+      "load_relative_error": 0.009406190323395958,
+      "load_N": 14.220444608276178,
+      "stiffness_N_m": 2828565.588888598,
+      "mass_balance_kg_s": 6.352747104407253e-22,
+      "solve_observe_tangent_seconds": 0.0156876790001661
+    },
+    {
+      "space": "CellFV",
+      "n": 16,
+      "state_dofs": 257,
+      "native_sample_relative_max_error": 0.0020607295501410623,
+      "port_relative_error": 0.0005337139608447838,
+      "flow_relative_error": 0.0009655220656957786,
+      "load_relative_error": 0.0023696710012770517,
+      "load_N": 14.121314610645392,
+      "stiffness_N_m": 2801924.0947329556,
+      "mass_balance_kg_s": 3.546950466627383e-21,
+      "solve_observe_tangent_seconds": 0.04234454500010543
+    },
+    {
+      "space": "VertexP1",
+      "n": 4,
+      "state_dofs": 26,
+      "native_sample_relative_max_error": 0.01754479302690577,
+      "port_relative_error": 0.0032123037319112813,
+      "flow_relative_error": 0.005811259143320369,
+      "load_relative_error": 0.013624637830045638,
+      "load_N": 13.895987893845076,
+      "stiffness_N_m": 2750726.7228542333,
+      "mass_balance_kg_s": 0.0,
+      "solve_observe_tangent_seconds": 0.03093229900014194
+    },
+    {
+      "space": "VertexP1",
+      "n": 8,
+      "state_dofs": 82,
+      "native_sample_relative_max_error": 0.005252823266366342,
+      "port_relative_error": 0.0008111616777853881,
+      "flow_relative_error": 0.0014674424058702673,
+      "load_relative_error": 0.003446902807322072,
+      "load_N": 14.039371121049165,
+      "stiffness_N_m": 2782037.158268808,
+      "mass_balance_kg_s": 1.0587911840678754e-22,
+      "solve_observe_tangent_seconds": 0.10668077800028186
+    },
+    {
+      "space": "VertexP1",
+      "n": 16,
+      "state_dofs": 290,
+      "native_sample_relative_max_error": 0.001538118749753147,
+      "port_relative_error": 0.00020337514413781843,
+      "flow_relative_error": 0.0003679184051477158,
+      "load_relative_error": 0.0008646688260541824,
+      "load_N": 14.07574945481435,
+      "stiffness_N_m": 2790099.6767757614,
+      "mass_balance_kg_s": 3.1763735522036263e-21,
+      "solve_observe_tangent_seconds": 0.4574769179998839
+    }
+  ],
+  "physical_cases": [
+    {
+      "case": "partial_steady",
+      "space": "CellFV",
+      "n": 8,
+      "state_dofs": 65,
+      "gap_m": 8e-06,
+      "newton_iterations": 1,
+      "negative_gap_load_slope_N_m": 2133242.1730639073,
+      "slope_kind": "static_stiffness",
+      "load_N": 9.276749451221729,
+      "port_increment_Pa": 88128.80136314868,
+      "upstream_mass_kg_s": 1.6429028596210425e-07,
+      "film_feed_mass_kg_s": 1.642902859621044e-07,
+      "film_storage_kg_s": 0.0,
+      "port_storage_kg_s": 0.0,
+      "outlet_mass_kg_s": 1.642902859621051e-07,
+      "balance_kg_s": 8.470329472543003e-22
+    },
+    {
+      "case": "partial_be_step",
+      "space": "CellFV",
+      "n": 8,
+      "state_dofs": 65,
+      "gap_m": 9e-06,
+      "newton_iterations": 3,
+      "negative_gap_load_slope_N_m": 1956904.3545172873,
+      "slope_kind": "backward_euler_step",
+      "load_N": 7.033719305284933,
+      "port_increment_Pa": 87195.20362741189,
+      "upstream_mass_kg_s": 1.7840531297116632e-07,
+      "film_feed_mass_kg_s": 1.8395262179784557e-07,
+      "film_storage_kg_s": 1.7599484898678098e-08,
+      "port_storage_kg_s": -5.5473088266791655e-09,
+      "outlet_mass_kg_s": 1.6635313689916745e-07,
+      "balance_kg_s": 6.203854594147708e-23
+    },
+    {
+      "case": "partial_steady",
+      "space": "VertexP1",
+      "n": 8,
+      "state_dofs": 82,
+      "gap_m": 8e-06,
+      "newton_iterations": 1,
+      "negative_gap_load_slope_N_m": 2140894.404609455,
+      "slope_kind": "static_stiffness",
+      "load_N": 9.24903713411489,
+      "port_increment_Pa": 88056.5749385891,
+      "upstream_mass_kg_s": 1.653847629511826e-07,
+      "film_feed_mass_kg_s": 1.6538476295118248e-07,
+      "film_storage_kg_s": 0.0,
+      "port_storage_kg_s": 0.0,
+      "outlet_mass_kg_s": 1.6538476295118312e-07,
+      "balance_kg_s": 5.293955920339377e-22
+    },
+    {
+      "case": "partial_be_step",
+      "space": "VertexP1",
+      "n": 8,
+      "state_dofs": 82,
+      "gap_m": 9e-06,
+      "newton_iterations": 3,
+      "negative_gap_load_slope_N_m": 1954616.6966137248,
+      "slope_kind": "backward_euler_step",
+      "load_N": 7.007204903188437,
+      "port_increment_Pa": 87131.93608919333,
+      "upstream_mass_kg_s": 1.7935932959494815e-07,
+      "film_feed_mass_kg_s": 1.8485340595610782e-07,
+      "film_storage_kg_s": 1.7589424683544212e-08,
+      "port_storage_kg_s": -5.494076361159603e-09,
+      "outlet_mass_kg_s": 1.672639812725636e-07,
+      "balance_kg_s": 6.28657265540301e-23
+    }
+  ],
+  "source_lines": {
+    "neo/__init__.py": 2,
+    "neo/assembly.py": 88,
+    "neo/bearing.py": 337,
+    "neo/forms.py": 146,
+    "neo/kernels.py": 154,
+    "neo/spaces.py": 155,
+    "tests/test_components.py": 240,
+    "tests/test_observations.py": 109,
+    "tests/test_oracles.py": 329,
+    "run.py": 253
+  },
+  "source_sha256": {
+    "neo/__init__.py": "22eec5eecc863ffb7271750073033d340d7f05a4e08e9114ade95aab456ae016",
+    "neo/assembly.py": "955f686db615ae2a47da5d85f3d1444e0cd90163b6e72b6308871bf1e5c9e1fa",
+    "neo/bearing.py": "9ace9016dfadb51e8ca8ffd608b89a5abe9e212f413b8f19feefec64e7a1a959",
+    "neo/forms.py": "e9bb52cae72c73dda52cfac844af0f35c40587b8406539ed5587025b138fbb75",
+    "neo/kernels.py": "9ee927bb03a04982da9aebec9e8f1fbb82e6afb4df0675185d664f7eb5242235",
+    "neo/spaces.py": "08e2cb4b597fe9b858a800e6a84e2b487492d8d094daab007d0c03e4129cafa2",
+    "tests/test_components.py": "235cffff2fe4bf2dae5fc611de62431a04bfaf7b60045b3c86897ecf74612699",
+    "tests/test_observations.py": "cabebd6e1f5199106df999246ec1544c9a4cbdeb55a48411edd6a7ea402c97a8",
+    "tests/test_oracles.py": "433633f60a88c473f3224e45406565ec222fc1e0adf36038392cc9f7fb4a67d5",
+    "run.py": "27b91e9197f8666f4939803c2c5aecf099b7b681f50da29551af60794fb9c92d"
+  },
+  "generated_kernels": [
+    {
+      "name": "load_1",
+      "file": "load_1.c",
+      "sha256": "02b482bed9781dc82b720d08de2a28881aa07c0f97fa1fbffc479d4eeadcd727",
+      "source_lines": 39,
+      "value_components": 1,
+      "derivative_components": 2
+    },
+    {
+      "name": "storage_3",
+      "file": "storage_3.c",
+      "sha256": "167a899d77ed252c318b0269a1434128e13d7cedcda9334187cc351f9e3a01f0",
+      "source_lines": 157,
+      "value_components": 5,
+      "derivative_components": 25
+    },
+    {
+      "name": "film_boundary",
+      "file": "film_boundary.c",
+      "sha256": "50fcc38e13fcccd1ff7b7010b69e4289fb64cc3eef87810bccba6bdb794a13c5",
+      "source_lines": 36,
+      "value_components": 1,
+      "derivative_components": 2
+    },
+    {
+      "name": "upstream",
+      "file": "upstream.c",
+      "sha256": "75073e7a810c6b5dce93973400c34aae0608ef1bb2a85b6b38cc65fc36f349bd",
+      "source_lines": 25,
+      "value_components": 1,
+      "derivative_components": 1
+    },
+    {
+      "name": "film_edge",
+      "file": "film_edge.c",
+      "sha256": "7579c6ebff997ddb4ce6f4464a188eb9bc9421ebcad4e55bfcc1b842acb99021",
+      "source_lines": 40,
+      "value_components": 1,
+      "derivative_components": 3
+    },
+    {
+      "name": "port_storage",
+      "file": "port_storage.c",
+      "sha256": "7a5bb38aea1d1c450cd2414fb0185f2c071ce63203c4d5884992714cdbdbbd4e",
+      "source_lines": 46,
+      "value_components": 1,
+      "derivative_components": 2
+    },
+    {
+      "name": "load_3",
+      "file": "load_3.c",
+      "sha256": "7ae56b7e02d53f79ca2967236938ef7aa4627b8538e699061d61956b30364d6c",
+      "source_lines": 90,
+      "value_components": 1,
+      "derivative_components": 10
+    },
+    {
+      "name": "storage_1",
+      "file": "storage_1.c",
+      "sha256": "9cbfea8a54d9abf22e92f1d4829359a6c348f4d477942d690603f37edae3089c",
+      "source_lines": 66,
+      "value_components": 3,
+      "derivative_components": 5
+    },
+    {
+      "name": "feed_3",
+      "file": "feed_3.c",
+      "sha256": "b20dab4dddd9dcfd4ceade5a8693ed2b9a8a5ba54d4a773a73c9921e4bf0e9ce",
+      "source_lines": 50,
+      "value_components": 3,
+      "derivative_components": 6
+    },
+    {
+      "name": "port_pressure",
+      "file": "port_pressure.c",
+      "sha256": "e85ae8eed710e47aede5baeffde2884c70b5ceb992e110e9358cd40f3770dc41",
+      "source_lines": 36,
+      "value_components": 1,
+      "derivative_components": 2
+    },
+    {
+      "name": "feed_1",
+      "file": "feed_1.c",
+      "sha256": "fa88276e3d3100997afa5a7b3fb02fcc75366b7c8e4052c84271ce4d22038ea5",
+      "source_lines": 30,
+      "value_components": 1,
+      "derivative_components": 2
+    }
+  ],
+  "generated_source_lines": 615,
+  "limitations": [
+    "Independent complete matrix solves use binary64; only storage integrands use Decimal70.",
+    "P1 conservation is nodal algebraic conservation and a Dirichlet-reaction global ledger.",
+    "P1 nonlinear storage/load use degree-two cubature, not exact non-polynomial integration.",
+    "Compensation ends at each residual row and sparse entry; later sparse algebra is ordinary float64.",
+    "Incidence product compensation excludes overflow/underflow and does not undo rounding inside local expressions.",
+    "Timings are single-process measurements, not a performance comparison with either reference library."
+  ],
+  "complete_run_seconds_before_write": 4.113793687999987
+}
